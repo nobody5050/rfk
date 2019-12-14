@@ -7,11 +7,13 @@
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+<canvas id="game"></canvas>
 
 <script>
-    var canvas = document.getElementById("myCanvas");
+    var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
+    ctx.canvas.width  = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
     var x = canvas.width/2;
     var y = canvas.height-30;
     var dx = 2;
