@@ -18,6 +18,10 @@
     var dx = 2;
     var dy = -2;
     var ballRadius = 20;
+    //prevent scrolling
+    document.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+});
 
     function drawBall() {
         ctx.beginPath();
